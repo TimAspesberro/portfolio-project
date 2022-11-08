@@ -16,20 +16,21 @@ nav {
     background-color: rgb(110, 110, 110);
 }
 
+
 nav h1 {
     padding: 10px;
 }
 
-li {
+nav li {
     float: left;
     border-right: 2px solid rgb(0, 0, 0);
 }
 
-li:last-child {
+nav li:last-child {
     border-right: none;
 }
 
-li a {
+nav li a {
     display: block;
     text-align: center;
     padding: 15px 15px;
@@ -37,9 +38,13 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+nav li a:hover {
     color: white;
     background-color: black;
+}
+
+img {
+    border: 5px solid rgb(0, 0, 0);
 }
 
 h1 {
@@ -49,10 +54,11 @@ h1 {
 header h1 {
     font-size: 26px;
     margin-left: 20px;
+    
 }
 
 main {
-    border: 3px solid black;
+    padding-top: 40px;
 
 }
 
@@ -70,6 +76,8 @@ main {
 }
 
 main h1 {
+    display: flex;
+    justify-content: center;
     padding: 40px 20px 0px 20px;
 }
 
@@ -82,29 +90,86 @@ main h1 {
     max-width: 400px;
     max-height: 600px;
     margin: 20px;
-    border: 3px solid black;
 }
 
 .my-work {
-    border: 3px solid red;
+    display: block;
+    padding-bottom: 100px;
 }
 
-.my-work img {
-    max-width: 1000px;
-    height: auto;
+.my-work h1{
+   font-size: 26px;
+   padding-bottom: 40px;
 }
 
-img {
+
+.first-image {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
+.first-row {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.second-row {
+    display: flex;
+    justify-content: center;
+}
+
+.img-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border: 5px solid black;
+    background-color: black;
+}
+
+.my-work img:hover {
+    opacity: 0.5;
+    border: 5px solid red;
+}
 
 footer {
     position: static;
+    display: flex;
     bottom: 0;
     width: 100%;
     padding: 15px 10px 10px 10px;
     background-color: rgb(110, 110, 110);
 }
 
+footer h1 {
+    margin-right: 27%;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+footer li {
+    float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .my-work {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
